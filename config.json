@@ -1,0 +1,30 @@
+{
+  "id": "teeka-reader",
+  "name": "Teeka Reader",
+  "organisation": "Raksha Immunisation Tools",
+  "color": "#17663f",
+  "topic": "Immunisation-card assistance",
+  "description": "Read printed card text and prepare a worker-verified vaccination history.",
+  "input": "document",
+  "model": "Tesseract LSTM OCR",
+  "modelRole": "Extract printed vaccination-card text; an ANM confirms doses and schedules. No automatic vaccine eligibility decision.",
+  "source": "https://github.com/tesseract-ocr/tesseract",
+  "fields": [
+    [
+      "unclear",
+      "Any dose or date unclear",
+      "boolean"
+    ],
+    [
+      "missed",
+      "Caregiver reports a missed appointment",
+      "boolean"
+    ]
+  ],
+  "sample": {
+    "unclear": true,
+    "missed": true
+  },
+  "note": "SYNTHETIC IMMUNISATION CARD\nBCG 12 Jan 2026\nOPV 0 12 Jan 2026\nNext visit: date unclear",
+  "guidance": "https://nhm.gov.in/index1.php?lang=1&level=3&sublinkid=947&lid=379"
+}

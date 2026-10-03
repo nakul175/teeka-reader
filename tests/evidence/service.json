@@ -1,0 +1,7 @@
+{
+  "appId": "teeka-reader",
+  "passed": 22,
+  "failed": 0,
+  "completedAt": "2026-10-03T09:12:49.076Z",
+  "coverage": "Real provider Worker handler and SQLite: contract, rule processing, signature, request hash, idempotency, replay, wrong customer, auth, CSRF, validation, no AI claim for sample evidence. Browser model execution is separate."
+}
