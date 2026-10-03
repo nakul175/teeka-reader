@@ -4,10 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.mjs"
+    "build": "node build.mjs",
+    "dev": "node build.mjs && node dev.mjs",
+    "test": "node build.mjs && node tests/service.mjs"
   },
   "devDependencies": {
     "drizzle-kit": "0.31.10",
     "drizzle-orm": "0.45.2"
+  },
+  "engines": {
+    "node": ">=22.13.0"
   }
 }
